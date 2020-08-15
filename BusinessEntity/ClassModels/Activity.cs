@@ -18,24 +18,25 @@ namespace BusinessEntity.ClassModels
 
         private DateTime date;
 
-        public DateTime Date;
-     
+        public DateTime Date
+        {
+            get
+            {
+                if (date == DateTime.MinValue)
+                {
+                    return date = DateTime.Now.AddDays(7);
+                }
+                return date;
+            }
+            set
+            {
+                date = value;
+            }
+        }
 
+        
 
-        //{
-        //    get
-        //    {
-        //        if ( date == DateTime.MinValue)
-        //        {
-        //            return date = DateTime.Now.AddDays(7);
-        //        }
-        //        return date;
-        //    }
-        //    set
-        //    {
-        //        date = value;
-        //    }
-        //}
+       
        
 
 
