@@ -11,7 +11,7 @@ namespace BusinessEntity.ClassModels
         public int ActivityID { get; set; }
         public string Event { get; set; }
         public string Adress { get; set; }
-        public string Kategori { get; set; }
+        public string Category { get; set; }
         public Employee Employee { get; set; }
     }
 }
