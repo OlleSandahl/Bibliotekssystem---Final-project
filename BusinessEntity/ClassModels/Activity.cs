@@ -13,5 +13,31 @@ namespace BusinessEntity.ClassModels
         public string Adress { get; set; }
         public string Category { get; set; }
         public Employee Employee { get; set; }
+
+        public ICollection<Alumnus> Alumni { get; set; }
+
+        private DateTime date;
+
+        public DateTime Date;
+     
+
+
+        //{
+        //    get
+        //    {
+        //        if ( date == DateTime.MinValue)
+        //        {
+        //            return date = DateTime.Now.AddDays(7);
+        //        }
+        //        return date;
+        //    }
+        //    set
+        //    {
+        //        date = value;
+        //    }
+        //}
+       
+
+
     }
 }
